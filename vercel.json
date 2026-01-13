@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "permitiq-pitch-deck.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/permitiq-pitch-deck.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/permitiq-pitch-deck.html"
+    }
+  ]
+}
